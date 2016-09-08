@@ -57,3 +57,22 @@ cantusFirmusDorian = \new Staff {
   }
   \cantusFirmusDorian
 >>
+
+<<
+  \tempo "Keppevästi"
+  {
+    \relative d' {
+      \clef "treble"
+      \time 2/1
+      r2 f' d g~ |
+      g f~ f e |
+      f g e g~ |
+      g f~ f e |
+      c a~ a g |
+      e' d~ d e~ |
+      e d~ d cis |
+      d\breve
+    }
+  }
+  \cantusFirmusDorian
+>>
