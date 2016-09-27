@@ -76,3 +76,17 @@ cantusFirmusDorian = \new Staff {
   }
   \cantusFirmusDorian
 >>
+
+<<
+  \tempo "Madellen"
+  {
+    \relative d' {
+      \clef "treble"
+      \time 2/1
+      r1 e4 d e2~ |
+      e4 d4 d2~ d cis |
+      d\breve
+    }
+  }
+  \cantusFirmusDorian
+>>
