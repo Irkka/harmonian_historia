@@ -5,36 +5,55 @@
   title = "Tehtävä 2"
 }
 
-cantusFirmusDorian = \new Staff {
+bassoContinuo = \new Staff {
   \relative d' {
-    \clef "treble"
-    \time 2/1
-    d1 g |
-    a g |
-    f e |
-    a g |
-    f e|
-    f g |
-    f e |
-    d\breve
+    \clef "bass"
+    \time 2/2
+		\key d \minor
+		d2 a |
+		d4 a d f, |
+		bes f bes d |
+		g, d g g, |
+		a d g a |
+		d2 r |
+		a e |
+		a4 e a c, |
+		f c f a, |
+		d a d d |
+		e a, d e |
+		a,2 f'4 c |
+		f bes c f, |
+		bes,2 c |
+		f r4 d |
+		g a bes g |
+		a2 d,4 a |
+		d g a d, |
+		g,2 a |
+		d r4 d |
+		g2 r4 e |
+		a2 r4 f |
+		bes2 r4 g |
+		a2 r |
+		d4 a d f, |
+		bes f bes d, |
+		g d g g, |
+		a2 d |
+		g, a |
+		d,1
   }
 }
 
+bassoContinuoChords = \new Staff {
+	\relative d' {
+		\clef "treble"
+		\time 2/2
+		\key d \minor
+		<f a d>2 <g c e> |
+
+	}
+}
+
 <<
-  \tempo "Haudanvakavasti"
-  {
-    \relative d' {
-      \clef "treble"
-      \time 2/1
-      d'1 e |
-      c b |
-      c e |
-      c e |
-      d e |
-      c b |
-      d cis |
-      d\breve
-    }
-  }
-  \cantusFirmusDorian
+	\bassoContinuoChords
+	\bassoContinuo
 >>
