@@ -1,92 +1,117 @@
 \version "2.18.2"
 
 \header {
-  composer = "I. A. Hakkarainen"
-  title = "Tehtävä 1"
+	composer = "I. A. Hakkarainen"
+	title = "Tehtävä 1"
 }
 
 cantusFirmusDorian = \new Staff {
-  \relative d' {
-    \clef "treble"
-    \time 2/1
-    d1 g |
-    a g |
-    f e |
-    a g |
-    f e|
-    f g |
-    f e |
-    d\breve
-  }
+	\relative d' {
+		\clef "treble"
+		\time 2/1
+		d1 g |
+		a g |
+		f e |
+		a g |
+		f e|
+		f g |
+		f e |
+		d\breve
+	}
 }
 
-<<
-  \tempo "Haudanvakavasti"
-  {
-    \relative d' {
-      \clef "treble"
-      \time 2/1
-      d'1 e |
-      c b |
-      c e |
-      c e |
-      d e |
-      c b |
-      d cis |
-      d\breve
-    }
-  }
-  \cantusFirmusDorian
->>
+firstSpecies = \new Staff {
+	\tempo "Haudanvakavasti"
+	\relative d'' {
+		\clef "treble"
+		\time 2/1
+		d1 e |
+		c e |
+		f g |
+		e b |
+		d c |
+		a b |
+		d cis |
+		d\breve
+	}
+}
 
-<<
-  \tempo "Reippaasti"
-  {
-    \relative d' {
-      \clef "treble"
-      \time 2/1
-      r2 f' e b |
-      e c b e |
-      c b g' f |
-      e c d b |
-      a c g c |
-      f e d e |
-      f d cis1 |
-      d\breve
-    }
-  }
-  \cantusFirmusDorian
->>
+secondSpecies = \new Staff {
+	\tempo "Reippaasti"
+	\relative d' {
+		\clef "treble"
+		\time 2/1
+		r2 f' e b |
+		e c b e |
+		c b g' f |
+		e c d b |
+		a c g c |
+		f e d e |
+		f d cis1 |
+		d\breve
+	}
+}
 
-<<
-  \tempo "Keppevästi"
-  {
-    \relative d' {
-      \clef "treble"
-      \time 2/1
-      r2 f' d g~ |
-      g f~ f e |
-      f g e g~ |
-      g f~ f e |
-      c a~ a g |
-      e' d~ d e~ |
-      e d~ d cis |
-      d\breve
-    }
-  }
-  \cantusFirmusDorian
->>
+thirdSpecies = \new Staff {
+	\tempo "Keppevästi"
+	\relative d' {
+		\clef "treble"
+		\time 2/1
+		r2 f' d g~ |
+		g f~ f e |
+		f g e g~ |
+		g f~ f e |
+		c a~ a g |
+		e' d~ d e~ |
+		e d~ d cis |
+		d\breve
+	}
+}
 
-<<
-  \tempo "Madellen"
-  {
-    \relative d' {
-      \clef "treble"
-      \time 2/1
-      r1 e4 d e2~ |
-      e4 d4 d2~ d cis |
-      d\breve
-    }
-  }
-  \cantusFirmusDorian
->>
+fourthSpecies = \new Staff {
+	\tempo "Madellen"
+	\relative d' {
+		\clef "treble"
+		\time 2/1
+		r1 e4 d e2~ |
+		e4 d4 d2~ d cis |
+		d\breve
+	}
+}
+
+\score {
+	<<
+		\firstSpecies
+		\cantusFirmusDorian
+	>>
+
+	\midi {}
+	\layout {}
+}
+
+\score {
+	<<
+		\secondSpecies
+		\cantusFirmusDorian
+	>>
+
+	\midi {}
+	\layout {}
+}
+
+\score {
+	<<
+		\thirdSpecies
+		\cantusFirmusDorian
+	>>
+
+	\midi {}
+	\layout {}
+}
+
+\score {
+	<<
+		\fourthSpecies
+		\cantusFirmusDorian
+	>>
+}
