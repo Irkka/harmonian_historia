@@ -41,14 +41,14 @@ secondSpecies = \new Staff {
 	\relative d' {
 		\clef "treble"
 		\time 2/1
-		r2 f' e b |
-		e c b e |
-		c b g' f |
-		e c d b |
-		a c g c |
-		f e d e |
-		f d cis1 |
-		d\breve
+		r2 f' d e |
+		c2 d e f |
+		d b c d |
+		c b d e |
+		f d g f |
+		d c b c |
+		d c e1 |
+		f\breve |
 	}
 }
 
