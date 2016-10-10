@@ -54,27 +54,32 @@ secondSpecies = \new Staff {
 
 thirdSpecies = \new Staff {
 	\tempo "Keppevästi"
-	\relative d' {
+	\relative d'' {
 		\clef "treble"
 		\time 2/1
-		r2 f' d g~ |
-		g f~ f e |
-		f g e g~ |
-		g f~ f e |
+		r2 f e g |
+		e c~ c b |
 		c a~ a g |
-		e' d~ d e~ |
+		c a b d |
+		d c e g |
+		a f~ f e~ |
 		e d~ d cis |
-		d\breve
+		d\breve |
 	}
 }
 
 fourthSpecies = \new Staff {
 	\tempo "Madellen"
-	\relative d' {
+	\relative d'' {
 		\clef "treble"
 		\time 2/1
-		r1 e4 d e2~ |
-		e4 d4 d2~ d cis |
+		r2 d4 f e d g e |
+		f e c d e a, b c |
+		f e d f g f e d |
+		c b a b e c d e |
+		f e d b e d f e |
+		d e g f e d e2~ |
+		e d~ d cis |
 		d\breve
 	}
 }
@@ -114,4 +119,7 @@ fourthSpecies = \new Staff {
 		\fourthSpecies
 		\cantusFirmusDorian
 	>>
+
+	\midi {}
+	\layout{}
 }
